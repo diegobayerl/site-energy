@@ -6,9 +6,6 @@ export default function Home() {
       <Head>
         <title>Home | Energy Jr</title>
       </Head>
-      <h1>
-        Diego Bayerl
-      </h1>
     </>
   )
 }
