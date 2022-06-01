@@ -1,0 +1,73 @@
+.slider {
+    height: 60vh;
+    width: 100vw;
+
+    position: absolute;
+
+    top: 5rem;
+
+    overflow: hidden;
+
+    input {
+        display: none;
+    }
+
+    .desableImage {
+        img {
+            opacity: 0;
+            transition: opacity 0.2s;
+
+            display: none;
+        }
+    }
+
+    .activeimage {
+        img {
+            opacity: 0.9;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .navigation {
+        position: absolute;
+        bottom: 1rem;
+
+        left: 46%;
+
+        display: flex;
+
+        align-items: flex-end;
+
+        button {
+            width: 1rem;
+            height: 1rem;
+            border-radius: 1rem;
+
+            background: var(--gray-300);
+            border: 0.05rem solid var(--gray-50);
+
+            margin: 0.4rem;
+
+            cursor: pointer;
+
+            transition: width 0.2s;
+            transition: height 0.2s;
+        }
+
+        .activebutton {
+            width: 1.1rem;
+            height: 1.1rem;
+
+            border-radius: 1.1rem;
+
+            background: var(--white);
+            border: 0.05rem solid var(--white);
+
+            margin: 0.4rem;
+
+            cursor: pointer;
+        }
+    }
+}
